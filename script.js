@@ -113,6 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   `;
   document.head.appendChild(estiloAnimacion);
+  console.log("%c¡Hola curioso del código! 👨‍💻\n¿Te mola lo que ves? ¡Hablemos! 👉 edupar47@gmail.com", "font-size: 16px; color: teal;");
+
 });
 console.log("%c¡Hola curioso del código! 👨‍💻\n¿Te mola lo que ves? ¡Hablemos! 👉 edupar47@gmail.com", "font-size: 16px; color: teal;");
 
