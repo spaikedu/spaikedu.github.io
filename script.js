@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Cargar partículas al fondo (una vez al cargar)
+  // Cargar partículas en el fondo
   tsParticles.load("tsparticles", {
     background: { color: "#ffffff" },
     particles: {
@@ -52,8 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Modo fiesta al hacer clic
-  document.addEventListener("click", () => {
+  // Modo fiesta al hacer clic (excepto si es en un enlace o botón)
+  document.addEventListener("click", (e) => {
+    const isInteractive = e.target.closest("a, button");
+    if (isInteractive) return; // no activar modo fiesta si se hace clic en enlace o botón
+
     // Cambiar fondo animado
     document.body.style.transition = "background 0.4s ease";
     document.body.style.background = "linear-gradient(135deg, #ff4081, #3f51b5, #00bcd4, #4caf50)";
