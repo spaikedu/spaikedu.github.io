@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Mensaje oculto para curiosos
   console.log(
-    "%c¡Hola curioso del código! 👨‍💻\n¿Te mola lo que ves? ¡Hablemos! 👉 edupar47@gmail.com",
+    "%c¡Hola curioso del código! 👨‍💻\n¿Te mola lo que ves?? ¡Hablemos! 👉 edupar47@gmail.com",
     "font-size: 16px; color: teal;"
   );
 });
