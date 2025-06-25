@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Animar proyectos al hacer scroll
+  // Animación al hacer scroll
   const elementos = document.querySelectorAll(".proyecto");
 
   const cargarElemento = (entry) => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 
-  // Scroll suave para anclas internas
+  // Scroll suave
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Cargar partículas y forzar pointer-events: none en el canvas
+  // Cargar partículas
   tsParticles.load("tsparticles", {
     background: { color: "#ffffff" },
     particles: {
@@ -50,15 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
         repulse: { distance: 100 }
       }
     }
-  }).then(() => {
-    // 🔐 Esperar a que el canvas se cree y asegurar que no bloquee clics
-    const canvas = document.querySelector("#tsparticles canvas");
+  }).then((container) => {
+    // Esperar a que se cree el canvas y deshabilitar su interacción
+    const canvas = container.canvas.element;
     if (canvas) {
       canvas.style.pointerEvents = "none";
+      console.log("✅ Canvas desactivado para clics");
     }
   });
 
-  // 🎊 Confeti solo al hacer clic en imágenes
+  // 🎊 Confeti al hacer clic en imágenes
   document.querySelectorAll("img").forEach((img) => {
     img.addEventListener("click", (e) => {
       confetti({
@@ -72,9 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Mensaje oculto para curiosos
+  // Consola oculta
   console.log(
-    "%c¡Hola curioso del código! 👨‍💻\n¿Te mola lo que ves?? ¡Hablemos! 👉 edupar47@gmail.com",
+    "%c¡Hola curioso del código! 👨‍💻\n¿Te mola lo que ves? ¡Hablemos! 👉 edupar47@gmail.com",
     "font-size: 16px; color: teal;"
   );
 });
