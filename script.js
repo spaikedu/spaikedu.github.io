@@ -62,6 +62,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.background = "linear-gradient(135deg, #ff4081, #3f51b5, #00bcd4, #4caf50)";
     document.body.style.backgroundSize = "400% 400%";
     document.body.style.animation = "fiesta 3s ease infinite";
+    // Lanzar confeti 🎊
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 }
+    });
 
     // Mostrar texto de fiesta
     const texto = document.createElement("div");
