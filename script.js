@@ -30,4 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // 🕵️ Mensaje gracioso para quien abre la consola
+  console.log(
+    "%c🧐 ¡Hola hacker del F12! \n¿Te mola lo que ves? Pues imagina lo que puedo hacer para tu empresa. 😏\n📬 Contáctame: edupar47@gmail.com",
+    "color: teal; font-size: 16px; font-weight: bold;"
+  );
 });
