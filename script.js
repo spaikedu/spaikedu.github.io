@@ -19,15 +19,79 @@ document.addEventListener("DOMContentLoaded", () => {
   elementos.forEach((el) => {
     observer.observe(el);
   });
-});
 
-// Scroll suave para anclas internas (si añades más secciones con enlaces)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const destino = document.querySelector(this.getAttribute("href"));
-    if (destino) {
-      destino.scrollIntoView({ behavior: "smooth" });
+  // Scroll suave para anclas internas
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const destino = document.querySelector(this.getAttribute("href"));
+      if (destino) {
+        destino.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Cargar partículas al fondo (una vez al cargar)
+  tsParticles.load("tsparticles", {
+    background: { color: "#ffffff" },
+    particles: {
+      number: { value: 50 },
+      color: { value: "#00bcd4" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3 },
+      move: { enable: true, speed: 1 }
+    },
+    interactivity: {
+      events: {
+        onHover: { enable: true, mode: "repulse" }
+      },
+      modes: {
+        repulse: { distance: 100 }
+      }
     }
   });
+
+  // Modo fiesta al hacer clic
+  document.addEventListener("click", () => {
+    // Cambiar fondo animado
+    document.body.style.transition = "background 0.4s ease";
+    document.body.style.background = "linear-gradient(135deg, #ff4081, #3f51b5, #00bcd4, #4caf50)";
+    document.body.style.backgroundSize = "400% 400%";
+    document.body.style.animation = "fiesta 3s ease infinite";
+
+    // Mostrar texto de fiesta
+    const texto = document.createElement("div");
+    texto.textContent = "🎉 ¡Modo Fiesta Activado! 🎉";
+    texto.style.position = "fixed";
+    texto.style.top = "20px";
+    texto.style.left = "50%";
+    texto.style.transform = "translateX(-50%)";
+    texto.style.background = "#fff";
+    texto.style.color = "#000";
+    texto.style.padding = "10px 20px";
+    texto.style.borderRadius = "10px";
+    texto.style.fontWeight = "bold";
+    texto.style.zIndex = "9999";
+    texto.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
+    document.body.appendChild(texto);
+
+    // Eliminar texto y animación después de unos segundos
+    setTimeout(() => {
+      document.body.style.animation = "none";
+      document.body.style.background = "#fff";
+      texto.remove();
+    }, 4000);
+  });
+
+  // Animación CSS para fondo fiesta
+  const estiloAnimacion = document.createElement("style");
+  estiloAnimacion.innerHTML = `
+  @keyframes fiesta {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  `;
+  document.head.appendChild(estiloAnimacion);
 });
