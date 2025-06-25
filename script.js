@@ -69,21 +69,22 @@ document.addEventListener("DOMContentLoaded", () => {
       origin: { y: 0.6 }
     });
 
-    // Mostrar texto de fiesta
-    const texto = document.createElement("div");
-    texto.textContent = "🎉 ¡Modo Fiesta Activado! 🎉";
-    texto.style.position = "fixed";
-    texto.style.top = "20px";
-    texto.style.left = "50%";
-    texto.style.transform = "translateX(-50%)";
-    texto.style.background = "#fff";
-    texto.style.color = "#000";
-    texto.style.padding = "10px 20px";
-    texto.style.borderRadius = "10px";
-    texto.style.fontWeight = "bold";
-    texto.style.zIndex = "9999";
-    texto.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
-    document.body.appendChild(texto);
+   const texto = document.createElement("div");
+texto.textContent = "🎉 ¡Modo Fiesta Activado! 🎉";
+texto.style.position = "fixed";
+texto.style.top = "20px";
+texto.style.left = "50%";
+texto.style.transform = "translateX(-50%)";
+texto.style.background = "#fff";
+texto.style.color = "#000";
+texto.style.padding = "10px 20px";
+texto.style.borderRadius = "10px";
+texto.style.fontWeight = "bold";
+texto.style.zIndex = "9999";
+texto.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
+texto.style.pointerEvents = "none"; // ✅ Esto es lo que faltaba
+document.body.appendChild(texto);
+
 
     // Eliminar texto y animación después de unos segundos
     setTimeout(() => {
