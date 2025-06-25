@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Cargar partículas en el fondo
   tsParticles.load("tsparticles", {
+    
     background: { color: "#ffffff" },
     particles: {
       number: { value: 50 },
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       size: { value: 3 },
       move: { enable: true, speed: 1 }
     },
+    
     interactivity: {
       events: {
         onHover: { enable: true, mode: "repulse" }
@@ -51,6 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+   // 🛠️ SOLUCIÓN FINAL: Forzar el canvas a no bloquear clics
+  setTimeout(() => {
+    const canvas = document.querySelector("#tsparticles canvas");
+    if (canvas) {
+      canvas.style.pointerEvents = "none";
+    }
+  }, 500);
 
   // Modo fiesta al hacer clic (excepto si es en un enlace o botón)
   document.addEventListener("click", (e) => {
