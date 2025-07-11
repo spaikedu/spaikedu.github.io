@@ -8,7 +8,7 @@ body {
   line-height: 1.6;
 
   /* Fondo con imagen personal */
-  background-image: url('edu.jpg');
+  background-image: url('images/edu.jpg');
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
