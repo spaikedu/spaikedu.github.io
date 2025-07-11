@@ -6,6 +6,14 @@ body {
   background-color: #f4f7fa;
   color: #333;
   line-height: 1.6;
+
+  /* Fondo con imagen personal */
+  background-image: url('edu.jpg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  padding-left: 250px; /* espacio para que el contenido no tape la imagen */
 }
 
 a {
@@ -25,15 +33,40 @@ header {
   padding: 2rem 1rem;
 }
 
+/* Puedes mantener este si usas h6 adicional */
+header h6 {
+  margin-top: 0.5rem;
+  font-weight: normal;
+  color: #cbd5e1;
+}
+
 header h1 {
   margin: 0;
   font-size: 2.5rem;
 }
 
-header h6 {
+header h4 {
   margin-top: 0.5rem;
   font-weight: normal;
   color: #cbd5e1;
+}
+
+/* Botón LinkedIn */
+.btn-linkedin {
+  display: inline-block;
+  background-color: #0a66c2;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-linkedin:hover {
+  background-color: #004182;
 }
 
 /* Proyectos */
@@ -58,6 +91,14 @@ header h6 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+
+.proyecto.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .proyecto img {
@@ -129,62 +170,3 @@ footer {
 footer a {
   color: #60a5fa;
 }
-
-.proyecto {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-in-out;
-}
-
-.proyecto.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.btn-linkedin {
-  display: inline-block;
-  background-color: #0a66c2;
-  color: white;
-  padding: 10px 20px;
-  margin-top: 15px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-linkedin:hover {
-  background-color: #004182;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('edu.jpg');
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  padding-left: 250px; /* espacio para que el contenido no se monte sobre la imagen */
-}
-
-header {
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.btn-linkedin {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #0077b5;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.btn-linkedin:hover {
-  background-color: #005983;
-}
-
-
