@@ -1,172 +1,159 @@
-/* General */
+[11/07/2025 11:16 AM] Edu Martínez : /* General */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f7fa;
-  color: #333;
-  line-height: 1.6;
-
-  /* Fondo con imagen personal */
-  background-image: url('images/edu.jpg');
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  padding-left: 250px; 
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f7fa;
+ color: #333;
+ line-height: 1.6;
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
+ color: #007bff;
+ text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+ text-decoration: underline;
 }
 
 /* Header */
 header {
-  background-color: #1e293b;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-/* Puedes mantener este si usas h6 adicional */
-header h6 {
-  margin-top: 0.5rem;
-  font-weight: normal;
-  color: #cbd5e1;
+ background-color: #1e293b;
+ color: #fff;
+ text-align: center;
+ padding: 2rem 1rem;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+ margin: 0;
+ font-size: 2.5rem;
 }
 
-header h4 {
-  margin-top: 0.5rem;
-  font-weight: normal;
-  color: #cbd5e1;
-}
-
-/* Botón LinkedIn */
-.btn-linkedin {
-  display: inline-block;
-  background-color: #0a66c2;
-  color: white;
-  padding: 10px 20px;
-  margin-top: 15px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-linkedin:hover {
-  background-color: #004182;
+header h6 {
+ margin-top: 0.5rem;
+ font-weight: normal;
+ color: #cbd5e1;
 }
 
 /* Proyectos */
 #proyectos {
-  padding: 3rem 1rem;
-  max-width: 1000px;
-  margin: auto;
+ padding: 3rem 1rem;
+ max-width: 1000px;
+ margin: auto;
 }
 
 #proyectos h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+ text-align: center;
+ margin-bottom: 2rem;
+ font-size: 2rem;
 }
 
 .proyecto {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.05);
-  margin-bottom: 2rem;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-in-out;
-}
-
-.proyecto.visible {
-  opacity: 1;
-  transform: translateY(0);
+ background: #fff;
+ border-radius: 10px;
+ box-shadow: 0 0 15px rgba(0,0,0,0.05);
+ margin-bottom: 2rem;
+ overflow: hidden;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
 }
 
 .proyecto img {
-  width: 100%;
-  max-width: 300px;
-  object-fit: cover;
-  height: auto;
-  flex: 1 1 300px;
+ width: 100%;
+ max-width: 300px;
+ object-fit: cover;
+ height: auto;
+ flex: 1 1 300px;
 }
 
 .proyecto .contenido {
-  padding: 1.5rem;
-  flex: 2 1 400px;
+ padding: 1.5rem;
+ flex: 2 1 400px;
 }
 
 .proyecto h3 {
-  margin-top: 0;
-  color: #1e40af;
+ margin-top: 0;
+ color: #1e40af;
 }
 
 .proyecto p {
-  margin: 0.5rem 0;
+ margin: 0.5rem 0;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #1e40af;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
+ display: inline-block;
+ margin-top: 1rem;
+ background-color: #1e40af;
+ color: white;
+ padding: 0.5rem 1rem;
+ border-radius: 6px;
+ font-weight: bold;
+ transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #1e3a8a;
+ background-color: #1e3a8a;
 }
 
 /* Sección Extra */
 #extra {
-  background-color: #e2e8f0;
-  padding: 2rem 1rem;
-  text-align: center;
+ background-color: #e2e8f0;
+ padding: 2rem 1rem;
+ text-align: center;
 }
 
 #extra h2 {
-  margin-bottom: 1rem;
+ margin-bottom: 1rem;
 }
 
 #extra ul {
-  list-style: none;
-  padding: 0;
+ list-style: none;
+ padding: 0;
 }
 
 #extra li {
-  margin: 0.5rem 0;
+ margin: 0.5rem 0;
 }
 
 /* Footer */
 footer {
-  background-color: #1e293b;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+ background-color: #1e293b;
+ color: #fff;
+ text-align: center;
+ padding: 1rem;
+ font-size: 0.9rem;
 }
 
 footer a {
-  color: #60a5fa;
+ color: #60a5fa;
 }
+
+.proyecto {
+ opacity: 0;
+ transform: translateY(30px);
+ transition: all 0.6s ease-in-out;
+}
+
+.proyecto.visible {
+ opacity: 1;
+ transform: translateY(0);
+}
+.btn-linkedin {
+ display: inline-block;
+ background-color: #0a66c2;
+ color: white;
+ padding: 10px 20px;
+ margin-top: 15px;
+ border-radius: 5px;
+ font-weight: bold;
+ font-size: 14px;
+ text-decoration: none;
+ transition: background-color 0.3s ease;
+}
+
+.btn-linkedin:hover {
+ background-color: #004182;
+}
+
