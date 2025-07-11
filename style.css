@@ -157,3 +157,34 @@ footer a {
   background-color: #004182;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('edu.jpg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  padding-left: 250px; /* espacio para que el contenido no se monte sobre la imagen */
+}
+
+header {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-linkedin {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn-linkedin:hover {
+  background-color: #005983;
+}
+
+
