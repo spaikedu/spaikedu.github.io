@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
-  padding-left: 250px; /* espacio para que el contenido no tape la imagen */
+  padding-left: 250px; 
 }
 
 a {
