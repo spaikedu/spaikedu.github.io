@@ -369,7 +369,7 @@ abbr {
 }
 .header-wrap .top-menu ul {
     display: flex;
-    margin: 0;
+    margin: 10px;
 }
 .header-wrap .top-menu li {
     margin-right: 30px;
