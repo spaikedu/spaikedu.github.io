@@ -368,6 +368,7 @@ abbr {
     z-index: 2;
 }
 .header-wrap .top-menu ul {
+    display: flex;
     margin: 10px 0;
 }
 .header-wrap .top-menu li {
