@@ -318,3 +318,7 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+@media (hover: none), (pointer: coarse) {
+  .menu-list a::before,
+  .menu-list a::after { content: none !important; display: none !important; }
+}
