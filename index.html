@@ -1,156 +1,426 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="images/examen.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de SpaikEdu</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+	<title>Eduardo Martínez Marín</title>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="Eduardo Martínez Marín">
+    <meta name="keywords" content="Desarrollador Web, Full-Stack, Laravel, Vue, WordPress, PHP, Odoo, MySQL">
+    <meta name="description" content="Eduardo Martínez Marín – Desarrollador Web Full‑Stack (Laravel, Vue, WordPress, PHP, Odoo)">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+	<!-- script
+	================================================== -->
+	<script src="js/modernizr.js"></script>
 
 </head>
 <body>
-  <header>
-    <h1>Eduardo Martínez Marín</h1>
-    <a href="https://www.linkedin.com/in/eduardo-m-05a523124?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn btn-linkedin">LinkedIn de Eduardo Martínez</a>
-    <h4>Desarrollador Web Full-Stack</h4>
-  </header>
 
-  <section id="proyectos">
-    <h2>Proyectos Destacados</h2>
+<div id="entire-wrapper">
 
-    <div class="proyecto">
-      <img src="images/avanza-fibra.png" alt="Avanza Fibra">
-      <div class="contenido">
-        <h3>Avanza Fibra</h3>
-        <p><strong>Tecnologías:</strong> WordPress, Elementor Pro, PHP, Google Maps API</p>
-        <p><strong>Rol:</strong> Diseño y desarrollo completo. Implementación de plugin en PHP para mostrar reseñas de Google.</p>
-        <a href="https://avanzafibra.com" target="_blank" class="btn">Ver proyecto</a>
+<header id="header">
+	<div class="header-wrap">
+		<div class="main-logo">
+			<a href="#home">
+				<img src="images/logoedu.jpg" alt="Logo Eduardo" style="height:80px;">
+			</a>
+		</div><!--main-logo-->
+
+		<nav id="navbar">
+			<div class="top-menu" id="navigation">
+				<ul class="menu-list">
+					<li class="menu-item active"><a href="#home" data-effect="Home">Mis Proyectos</a></li>
+					<li class="menu-item"><a href="#about-me" class="nav-link" data-effect="About Me">Sobre mi</a></li>
+					<li class="menu-item"><a href="#testimonial" class="nav-link" data-effect="Testimonial">Testimonial</a></li>
+					<li class="menu-item"><a href="#latest-blog" class="nav-link" data-effect="Blog">Blog</a></li>
+					<li class="menu-item"><a href="#contact" class="nav-link" data-effect="Contact">Contact</a></li>
+				</ul>
+
+				<div class="menu-icon">
+					<a href="javascript:void(0);" class="bar-icon" onclick="e">
+				    	<i class="icon icon-segment"></i>
+				 	</a>
+					<a href="javascript:void(0);" class="bar-icon" onclick="e">
+				    	<i class="icon icon-close"></i>
+				 	</a>
+				</div>
+
+			</div>
+		</nav>	
+
+	</div><!--header-wrap-->
+</header>
+
+<div id="billboard" id="home">
+	<img src="images/main-banner5.png" alt="banner" class="banner-image">
+	<div class="banner-content">
+
+		<div class="banner-header">
+			<h1>Hola, soy <span class="colored">Eduardo Martínez</span></h1>
+			<p>Desarrollador Web <strong>Full‑Stack</strong> (Laravel · Vue · PHP · WordPress · MySQL · Odoo).</p>
+			<div class="btn-wrap">
+				<a href="mailto:edupar47@gmail.com" class="btn-outline-orange btn-pill">Contacto</a>
+				<a href="https://www.linkedin.com/in/eduardo-m-05a523124" target="_blank" class="btn-outline-orange btn-pill" style="margin-left:10px">LinkedIn</a>
+			</div>
+		</div><!--banner-header-->
+		<div class="socila-links">
+			<ul>
+				<li><a href="https://github.com/spaikedu" target="_blank" aria-label="GitHub"><i class="icon icon-github"></i></a></li>
+				<li><a href="mailto:edupar47@gmail.com" aria-label="Email"><i class="icon icon-mail"></i></a></li>
+				<li>
+  <a href="https://www.linkedin.com/in/eduardo-m-05a523124" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</li>
+
+			</ul>
+		</div><!--socila-links-->
+
+	</div>
+</div><!--billboard-->
+
+<main id="main">
+
+<section id="about-me">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="section-header">
+					<h2 class="section-title">Sobre mi</h2>
+				</div>
+				<div class="person-information">
+					<div class="description">
+						<p>Desarrollador web con experiencia en <strong>Laravel, Vue 3, PHP, WordPress</strong> y bases de datos <strong>MySQL</strong>. También integro soluciones de negocio con <strong>Odoo</strong> (CRM, Ventas, Proyectos, Facturación, Inventario) y automatizaciones con APIs.</p>
+						<p>He trabajado en sitios corporativos, buscadores de cobertura, sistemas de contratación online y SPAs. Me enfoco en código limpio, rendimiento y DX/UX.</p>
+						<div class="general-button">
+							<div class="btn-wrap">
+								<a href="mailto:edupar47@gmail.com" class="btn-accent">Ponte en contacto</a>
+							</div>
+							<div class="btn-wrap">
+								<a href="images/CVEduardoMartinezMarin.pdf" class="btn-outline-dark">Descargar CV</a>
+							</div>
+						</div>
+					</div>
+					<div class="skill-chart">
+						<ul class="skill-chart-list">
+							<li>
+							<div class="skill-title">Laravel / PHP</div>
+							<span class="skill ninety-percent"></span>
+							</li>
+							<li>
+							<div class="skill-title">Vue 3</div>
+							<span class="skill eighty-percent"></span>
+							</li>
+							<li>
+							<div class="skill-title">WordPress</div>
+							<span class="skill ninety-percent"></span>
+							</li>
+							<li>
+							<div class="skill-title">Odoo / Integraciones</div>
+							<span class="skill eighty-percent"></span>
+							</li>
+						</ul>
+					</div>
+				</div><!--portfolio-wrap-->
+			</div><!--inner-content-->
+		</div>
+	</div>
+</section>
+
+<section id="services">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="section-header align-center">
+					<h2 class="section-title">Integraciones</h2>
+					<p>Soluciones a medida de extremo a extremo: desde la idea hasta la puesta en producción.</p>
+				</div>
+				<div class="service-slider grid">
+					<div class="column">
+						<span class="iconify" data-icon="mdi:code-tags"></span>
+						<h3>Desarrollo Full‑Stack</h3>
+						<p>APIs REST con Laravel, SPAs con Vue y bases de datos MySQL.</p>
+					</div>
+					<div class="column">
+						<span class="iconify" data-icon="mdi:wordpress"></span>
+						<h3>WordPress corporativo</h3>
+						<p>Tematización, maquetación (Elementor/Divi/Betheme) y rendimiento.</p>
+					</div>
+					<div class="column">
+						<span class="iconify" data-icon="mdi:cog"></span>
+						<h3>Integraciones & Odoo</h3>
+						<p>Automatizaciones, flujos de negocio y conexión con servicios externos.</p>
+					</div>
+					<div class="column">
+						<span class="iconify" data-icon="mdi:magnify"></span>
+						<h3>SEO técnico</h3>
+						<p>Mejoras de performance, accesibilidad y prácticas web modernas.</p>
+					</div>
+					<div class="column">
+						<span class="iconify" data-icon="mdi:palette"></span>
+						<h3>UI/UX & Componentes</h3>
+						<p>Interfaces claras, diseño responsivo y micro‑interacciones.</p>
+					</div>
+				</div><!--services-content-->
+			</div>
+		</div>
+	</div>		
+</section>
+
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="inner-content">
+
+        <div class="section-header align-center">
+          <h2 class="section-title">Portfolio</h2>
+          <p class="section-lead">Selección de proyectos reales. Filtra por categoría.</p>
+        </div>
+
+        <!-- Controles (sin JS) -->
+        <div class="pf-controls" role="tablist" aria-label="Filtros de portfolio">
+          <input type="radio" name="pf-filter" id="pf-all"    class="pf-radio" checked>
+          <label for="pf-all"    class="pf-chip" role="tab" aria-controls="pf-grid">Todo</label>
+
+          <input type="radio" name="pf-filter" id="pf-web"    class="pf-radio">
+          <label for="pf-web"    class="pf-chip" role="tab" aria-controls="pf-grid">Web Apps</label>
+
+          <input type="radio" name="pf-filter" id="pf-wp"     class="pf-radio">
+          <label for="pf-wp"     class="pf-chip" role="tab" aria-controls="pf-grid">WordPress</label>
+
+          <input type="radio" name="pf-filter" id="pf-auto"   class="pf-radio">
+          <label for="pf-auto"   class="pf-chip" role="tab" aria-controls="pf-grid">Automatización</label>
+
+          <input type="radio" name="pf-filter" id="pf-otros"  class="pf-radio">
+          <label for="pf-otros"  class="pf-chip" role="tab" aria-controls="pf-grid">Otros</label>
+        </div>
+
+        <!-- Grid -->
+        <div id="pf-grid" class="pf-grid" aria-live="polite">
+          <!-- Tarjeta -->
+          <article class="pf-card cat-wp" tabindex="0">
+            <a class="pf-media" href="https://avanzafibra.com" target="_blank" rel="noopener" aria-label="Abrir Avanza Fibra">
+              <img loading="lazy" src="images/logoedu.jpg" alt="Avanza Fibra — WordPress · PHP · Maps API">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://avanzafibra.com" target="_blank" rel="noopener">Avanza Fibra</a></h3>
+              <span class="pf-meta">WordPress · PHP · Maps API</span>
+            </div>
+          </article>
+
+          <article class="pf-card cat-web" tabindex="0">
+            <a class="pf-media" href="https://github.com/spaikedu/gestion-tareas" target="_blank" rel="noopener" aria-label="Abrir Gestor de Tareas">
+              <img loading="lazy" src="images/logoedu.jpg" alt="Gestor de Tareas — Laravel · Vue 3 · MySQL">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://github.com/spaikedu/gestion-tareas" target="_blank" rel="noopener">Gestor de Tareas</a></h3>
+              <span class="pf-meta">Laravel · Vue 3 · MySQL</span>
+            </div>
+          </article>
+
+          <article class="pf-card cat-auto" tabindex="0">
+            <a class="pf-media" href="https://avzpruebas.com.es/contratacion/index.html" target="_blank" rel="noopener" aria-label="Abrir Contratación Online">
+              <img loading="lazy" src="images/logoedu.jpg" alt="Contratación Online — Vue · JS">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://avzpruebas.com.es/contratacion/index.html" target="_blank" rel="noopener">Contratación Online</a></h3>
+              <span class="pf-meta">Vue · JS</span>
+            </div>
+          </article>
+
+          <article class="pf-card cat-web" tabindex="0">
+            <a class="pf-media" href="https://github.com/spaikedu/buscador-cobertura" target="_blank" rel="noopener" aria-label="Abrir Buscador Cobertura">
+              <img loading="lazy" src="images/logoedu.jpg" alt="Buscador de Cobertura — PHP · MySQL">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://github.com/spaikedu/buscador-cobertura" target="_blank" rel="noopener">Buscador de Cobertura</a></h3>
+              <span class="pf-meta">PHP · MySQL</span>
+            </div>
+          </article>
+
+          <article class="pf-card cat-wp" tabindex="0">
+            <a class="pf-media" href="https://loscuatrovientos.com" target="_blank" rel="noopener" aria-label="Abrir Los Cuatro Vientos">
+              <img loading="lazy" src="images/logoedu.jpg" alt="Los Cuatro Vientos — WordPress · Reservas">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://loscuatrovientos.com" target="_blank" rel="noopener">Los Cuatro Vientos</a></h3>
+              <span class="pf-meta">WordPress · Reservas</span>
+            </div>
+          </article>
+
+          <article class="pf-card cat-wp" tabindex="0">
+            <a class="pf-media" href="https://pipoland.es" target="_blank" rel="noopener" aria-label="Abrir Pipoland">
+              <img loading="lazy" src="images/logoedu.jpg" alt="Pipoland — WordPress · Reservas">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://pipoland.es" target="_blank" rel="noopener">Pipoland</a></h3>
+              <span class="pf-meta">WordPress · Reservas</span>
+            </div>
+          </article>
+
+          <article class="pf-card cat-auto" tabindex="0">
+            <a class="pf-media" href="https://www.odoo.com/es_ES/help" target="_blank" rel="noopener" aria-label="Abrir Automatización con Odoo">
+              <img loading="lazy" src="images/logoedu.jpg" alt="Automatización con Odoo — Odoo Enterprise · APIs">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://www.odoo.com/es_ES/help" target="_blank" rel="noopener">Automatización con Odoo</a></h3>
+              <span class="pf-meta">Odoo Enterprise · APIs</span>
+            </div>
+          </article>
+
+          <article class="pf-card cat-otros" tabindex="0">
+            <a class="pf-media" href="https://github.com/spaikedu/gestion-usuarios" target="_blank" rel="noopener" aria-label="Abrir TFG Gestión de Usuarios">
+              <img loading="lazy" src="images/logoedu.jpg" alt="TFG Gestión de Usuarios — Java · Spring Boot">
+            </a>
+            <div class="pf-body">
+              <h3 class="pf-title"><a href="https://github.com/spaikedu/gestion-usuarios" target="_blank" rel="noopener">TFG – Gestión de Usuarios</a></h3>
+              <span class="pf-meta">Java · Spring Boot</span>
+            </div>
+          </article>
+        </div>
+
+      
+
       </div>
     </div>
-
-    <div class="proyecto">
-      <img src="images/gestor-tareas.png" alt="Gestor de Tareas">
-      <div class="contenido">
-        <h3>Gestor de Tareas (Laravel + Vue)</h3>
-        <p><strong>Tecnologías:</strong> Laravel, Vue 3, MySQL, Vite, Html</p>
-        <p><strong>Rol:</strong> Desarrollo Full-Stack del sistema. API REST con Laravel y SPA con Vue. Funciones de alta, listado y gestión de tareas.</p>
-        <a href="https://github.com/spaikedu/gestion-tareas" target="_blank" class="btn">Ver en GitHub</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-  <img src="images/contratacionafs.jpg" alt="Contratación Videovigilancia">
-  <div class="contenido">
-    <h3>Contratación Online de Videovigilancia</h3>
-    <p><strong>Tecnologías:</strong> Vue.js, JavaScript</p>
-    <p><strong>Rol:</strong> Desarrollo del sistema de contratación online de servicios de videovigilancia integrando Vue.js. Gestión visual y dinámica del pedido final con lógica personalizada en JS.</p>
-    <a href="https://avzpruebas.com.es/contratacion/index.html" target="_blank" class="btn">Ver proyecto</a>
   </div>
+</section>
+
+
+
+
+
+<section id="latest-blog">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">				
+				<div class="section-header align-center">
+					<h2 class="section-title">Blog Posts</h2>
+				</div>
+				<div class="post-content">
+
+				<div class="grid">
+					<div class="post-item">
+						<div class="meta-date">
+							<span class="day">08</span>
+							<span class="month">Ago</span>
+						</div>
+						<h3>
+							<a href="#">Cómo monté un buscador de cobertura con PHP y MySQL</a>
+						</h3>	
+					</div>
+					<div class="btn-wrap">
+						<a href="#" class="btn-normal">Leer más
+						<i class="icon icon-arrow-top"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="grid">
+					<div class="post-item">
+						<div class="meta-date">
+							<span class="day">12</span>
+							<span class="month">Jun</span>
+						</div>
+						<h3>
+							<a href="#">Mejores prácticas para SPAs con Laravel + Vue</a>
+						</h3>	
+					</div>
+					<div class="btn-wrap">
+						<a href="#" class="btn-normal">Leer más
+						<i class="icon icon-arrow-top"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="grid">
+					<div class="post-item">
+						<div class="meta-date">
+							<span class="day">28</span>
+							<span class="month">Mar</span>
+						</div>
+						<h3>
+							<a href="#">Automatizando procesos con Odoo + Make</a>
+						</h3>	
+					</div>
+					<div class="btn-wrap">
+						<a href="#" class="btn-normal">Leer más
+						<i class="icon icon-arrow-top"></i>
+						</a>
+					</div>
+				</div>
+
+				</div><!--post-content-->
+
+				<div class="btn-wrap align-center">
+					<a href="#" class="btn-accent">Ver todos los posts</a>
+				</div>
+
+		</div>
+	</div>
+</section>
+
+
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<h2>Proyectos a medida</h2>
+				<p>De la idea al despliegue: backend PHP/Laravel, front con Vue y WordPress corporativo.</p>
+				<div class="btn-wrap align-center">
+					<a href="mailto:edupar47@gmail.com" class="btn-outline-orange btn-pill">¿Hablamos?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<div id="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="grid">
+					<div class="copyright">
+						<p>© 2025 Eduardo Martínez Marín.</p>
+					</div>
+					<div class="social-links">
+						<ul>
+							<li><a href="https://github.com/spaikedu" target="_blank"><i class="icon icon-github"></i></a></li>
+							<li>
+							<a href="https://www.linkedin.com/in/eduardo-m-05a523124" target="_blank" aria-label="LinkedIn">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							</li>
+
+							<li><a href="mailto:edupar47@gmail.com"><i class="icon icon-mail"></i></a></li>
+						</ul>
+					</div>	
+				</div>
+
+			</div><!--footer-bottom-content-->			
+		</div>
+	</div>
 </div>
 
-    <div class="proyecto">
-      <img src="images/buscador-cobertura.jpg" alt="Buscador de Cobertura">
-      <div class="contenido">
-        <h3>Buscador de Cobertura</h3>
-        <p><strong>Tecnologías:</strong> PHP, MySQL, HTML, CSS</p>
-        <p><strong>Rol:</strong> Desarrollo completo del sistema de comprobación de cobertura, incluyendo backend con PHP y MySQL, y frontend personalizado.</p>
-        <a href="https://github.com/spaikedu/buscador-cobertura" target="_blank" class="btn">Ver en GitHub</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-        <img src="images/avanzaseguridad.jpg" alt="avanzaseguridad">
-      <div class="contenido">
-        <h3>Avanza Seguridad</h3>
-        <p><strong>Tecnologías:</strong> WordPress, Betheme</p>
-        <p><strong>Rol:</strong> Diseño y maquetación completa de la web corporativa.</p>
-        <a href="https://avanzaseguridad.com" target="_blank" class="btn">Ver proyecto</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-        <img src="images/loscuatrovientos.jpg" alt="loscuatrovientos">
-      <div class="contenido">
-      <div class="contenido">
-        <h3>Los Cuatro Vientos</h3>
-        <p><strong>Tecnologías:</strong> WordPress, WPBakery, Smoobu</p>
-        <p><strong>Rol:</strong> Creación de la web y configuración de sistema de reservas turísticas.</p>
-        <a href="https://loscuatrovientos.com" target="_blank" class="btn">Ver proyecto</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-        <img src="images/cuatrovientosbeach.jpg" alt="cuatrovientosbeach">
-      <div class="contenido">
-        <h3>Cuatrovientos Beach</h3>
-        <p><strong>Tecnologías:</strong> WordPress, Betheme, Smoobu</p>
-        <p><strong>Rol:</strong> Desarrollo de la web de alojamiento vacacional con sistema de reservas online.</p>
-        <a href="https://cuatrovientosbeach.com" target="_blank" class="btn">Ver proyecto</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-        <img src="images/webedisep.jpg" alt="edisep">
-      <div class="contenido">
-        <h3>Edisep</h3>
-        <p><strong>Tecnologías:</strong> WordPress, Divi</p>
-        <p><strong>Rol:</strong> Desarrollo del sitio corporativo con diseño personalizado.</p>
-        <a href="https://edisep.com" target="_blank" class="btn">Ver proyecto</a>
-      </div>
-    </div>
+</div><!--entire-wrapper-->
 
 
-
-    <div class="proyecto">
-         <img src="images/pipolandweb.jpg" alt="Pipoland">
-      <div class="contenido">
-        <h3>Pipoland</h3>
-        <p><strong>Tecnologías:</strong> WordPress, Bookitit</p>
-        <p><strong>Rol:</strong> Creación de web con sistema de reservas online para centro infantil.</p>
-        <a href="https://pipoland.es" target="_blank" class="btn">Ver proyecto</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-        <img src="images/proyectofin.jpg" alt="proyectofin">
-      <div class="contenido">
-        <h3>TFG - Sistema de Gestión de Usuarios</h3>
-        <p><strong>Tecnologías:</strong> Java, Spring Boot, HTML, CSS</p>
-        <p><strong>Rol:</strong> Proyecto final de grado. Aplicación de gestión de usuarios con roles, permisos y panel de administración.</p>
-        <a href="https://github.com/spaikedu/gestion-usuarios" target="_blank" class="btn">Ver en GitHub</a>
-      </div>
-    </div>
-<div class="proyecto">
-        <img src="images/odoo.png" alt="Odoo">
-      <div class="contenido">
-        <h3>Automatización con <strong>Odoo</strong></h3>
-        <p><strong>Tecnologías:</strong> Odoo Entrerpraise</p>
-        <p><strong>Rol:</strong> Gestión e integración de módulos de Odoo incluyendo CRM, Ventas, Firma Electrónica, Tableros, Citas, Partes de Horas, Inventario, Facturación, Proyectos, Marketing Automation y más. Automatización de procesos internos, personalización de flujos y conexión con APIs externas mediante Make .</p>
-        <a href="https://www.odoo.com/es_ES/help" target="_blank" class="btn">Ver en Odoo</a>
-      </div>
-    </div>
-
-
-  </section>
-
-  <section id="extra">
-    <h2>Otras habilidades</h2>
-    <ul>
-      <li>Disponibilidad para viajar</li>
-       <li>Visual Studio Code</li>
-       <li>Inglés </li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>Contacto: <br><a href="mailto:edupar47@gmail.com">Correo Eduardo</a> | <a href="https://github.com/spaikedu" target="_blank">GitHub</a></p>
-  </footer>
-
-  <script src="script.js"></script>
-  
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>
