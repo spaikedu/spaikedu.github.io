@@ -1055,3 +1055,34 @@ span.colored {
 
 #pf-otros:checked ~ #pf-grid .pf-card { display:none; }
 #pf-otros:checked ~ #pf-grid .pf-card.cat-otros { display:block; }
+/* Ocultar los 3 últimos items del menú en pantallas pequeñas */
+@media (max-width: 1080px) {
+  .menu-list .menu-item:nth-last-child(-n+3) { 
+    display: none !important;
+  }
+}
+
+/* Anular el menú a pantalla completa en móvil */
+@media (max-width: 1080px) {
+  /* Siempre mostrar la UL en lugar de ocultarla */
+  .header-wrap .top-menu ul {
+    display: flex !important;
+    position: static !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  /* Ignorar completamente el estado .menu-bar */
+  .header-wrap .top-menu.menu-bar ul {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+  .header-wrap .top-menu.menu-bar .menu-list a {
+    font-size: 1em !important;
+    color: #fff !important;
+  }
+  /* Ocultar el icono hamburguesa para que no interfiera */
+  #navbar .menu-icon { 
+    display: none !important; 
+  }
+}
